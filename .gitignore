@@ -1,0 +1,16 @@
+# Cấu hình cá nhân VS Code 
+.vscode/
+
+# File rác hệ thống Windows & macOS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# File log, file tạm và bản sao lưu
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Thư mục thư viện 
+node_modules/
