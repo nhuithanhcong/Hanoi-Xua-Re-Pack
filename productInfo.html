@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Giá trị dinh dưỡng khoa học và các món ăn thực dưỡng từ gạo lứt và lá sen trong Trà Hà Nội Xưa.">
+  <title>Thông Tin Sản Phẩm & Thực Dưỡng | Trà Hà Nội Xưa</title>
+  <link rel="icon" href="./assets/images/logo-ha-noi-xua.png?v=2">
+  <!-- Google Fonts: Playfair Display (tiêu đề cổ điển) & Be Vietnam Pro (nội dung tiếng Việt) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <!-- Stylesheets (sẽ bổ sung chi tiết ở bước tiếp theo) -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Trang chủ Hà Nội Xưa">
+        <img src="./assets/images/logo-ha-noi-xua.png" alt="Logo thương hiệu Hà Nội Xưa - Since 1989" width="56" height="56">
+        <div class="brand-text">
+          <span class="brand-name">Hà Nội Xưa</span>
+          <span class="brand-tagline">Quà quê của người Việt</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="primaryNav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="newProPack.html" class="nav-link">Bao bì mới</a></li>
+          <li class="nav-item"><a href="productInfo.html" class="nav-link active" aria-current="page">Thông tin sản phẩm</a></li>
+          <li class="nav-item"><a href="productStory.html" class="nav-link">Câu chuyện sản phẩm</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Đường dẫn trang">
+          <a href="index.html">Trang chủ</a> <span>/</span> <span aria-current="page">Thông tin sản phẩm</span>
+        </nav>
+        <h1 class="page-title">Giá Trị Dinh Dưỡng &amp; Thực Dưỡng</h1>
+
+        <!-- Thanh chuyển đổi nhanh giữa Gạo lứt và Lá sen -->
+        <div class="ingredient-switcher" role="tablist" aria-label="Chọn nguyên liệu chính" data-tabs="ingredients">
+          <button type="button" class="tab-btn active" role="tab" id="tab-gao-lut" aria-selected="true" aria-controls="panel-gao-lut" data-tab-target="panel-gao-lut">
+            1. Gạo Lứt (Dinh dưỡng &amp; Thực dưỡng)
+          </button>
+          <button type="button" class="tab-btn" role="tab" id="tab-la-sen" aria-selected="false" aria-controls="panel-la-sen" data-tab-target="panel-la-sen">
+            2. Lá Sen (Dinh dưỡng &amp; Thực dưỡng)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 1: GẠO LỨT -->
+    <section class="section ingredient-section tab-panel active" id="panel-gao-lut" role="tabpanel" aria-labelledby="tab-gao-lut">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Nguyên liệu thứ nhất</span>
+          <h2 class="section-title">Gạo Lứt — Giá Trị Dinh Dưỡng &amp; Thực Dưỡng</h2>
+        </div>
+
+        <!-- Nghiên cứu khoa học về gạo lứt -->
+        <div class="research-grid" data-reveal>
+          <div class="research-visual">
+            <img src="./assets/images/nguyen-lieu-gao-lut.jpg" alt="Hạt gạo lứt nguyên cám giàu dinh dưỡng" data-lightbox>
+          </div>
+          <div class="research-content">
+            <h3>Các Nghiên Cứu Về Giá Trị Dinh Dưỡng Của Gạo Lứt</h3>
+            <blockquote class="research-quote">
+              <p>
+                <strong>Theo Mir SA et al. (2020):</strong> Gạo lứt là loại gạo nguyên hạt bao gồm nội nhũ, phôi và lớp cám. Về mặt dinh dưỡng, gạo lứt vượt trội hơn gạo trắng và là nguồn cung cấp vitamin, khoáng chất, chất xơ, &gamma;-oryzanol và các thành phần phytochemical tốt hơn, có thể hỗ trợ sức khỏe con người.
+              </p>
+            </blockquote>
+            <blockquote class="research-quote">
+              <p>
+                <strong>Theo Carcea M. (2021):</strong> Gạo lứt bao gồm lớp cám (6–7% tổng trọng lượng), phôi (2–3%) và nội nhũ (khoảng 90%). Nó là một loại ngũ cốc nguyên hạt và do đó, được biết là có tác dụng có lợi cho sức khỏe con người. Tuy nhiên, gạo lứt ăn được hiếm khi được tiêu thụ vì hầu hết người dân thích gạo trắng xay xát hơn vì những lý do liên quan đến hình thức, hương vị, độ ngon miệng, dễ nấu, truyền thống, an toàn, thời hạn sử dụng và thiếu nhận thức về lợi ích và tính sẵn có của nó, điều này hạn chế tiềm năng thị trường. Các báo cáo khoa học mới nhất về thành phần dinh dưỡng của gạo lứt và sự phát triển của công nghệ sản xuất cũng ghi nhận nhiều tác động tích cực của việc tiêu thụ gạo lứt đối với sức khỏe con người.
+              </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Bảng thành phần dinh dưỡng Gạo lứt -->
+        <div class="nutrition-table-wrap" data-reveal>
+          <h3>Bảng Thành Phần Dinh Dưỡng Của Gạo Lứt</h3>
+          <div class="table-responsive">
+            <table class="nutrition-table">
+              <thead>
+                <tr>
+                  <th scope="col">Chất dinh dưỡng</th>
+                  <th scope="col">Gạo lứt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Nước (g)</td><td>12.0</td></tr>
+                <tr><td>Năng lượng (Kcal)</td><td>341</td></tr>
+                <tr><td>Protein (g)</td><td>7.5</td></tr>
+                <tr><td>Chất béo (g)</td><td>1.9</td></tr>
+                <tr><td>Lượng carbohydrate có sẵn (g)</td><td>77.4</td></tr>
+                <tr><td>Tinh bột (g)</td><td>69.2</td></tr>
+                <tr><td>Carbohydrate hòa tan (g)</td><td>1.2</td></tr>
+                <tr><td>Tổng lượng chất xơ trong chế độ ăn (g)</td><td>1.9</td></tr>
+                <tr><td>Chất xơ hòa tan (g)</td><td>0.12</td></tr>
+                <tr><td>Chất xơ không hòa tan (g)</td><td>1.8</td></tr>
+                <tr class="table-group-row"><th colspan="2" scope="colgroup">Khoáng chất</th></tr>
+                <tr><td>Natri (mg)</td><td>9</td></tr>
+                <tr><td>Kali (mg)</td><td>214</td></tr>
+                <tr><td>Canxi (mg)</td><td>32</td></tr>
+                <tr><td>Magie (mg)</td><td>20</td></tr>
+                <tr><td>Phốt pho (mg)</td><td>221</td></tr>
+                <tr><td>Sắt (mg)</td><td>1.6</td></tr>
+                <tr class="table-group-row"><th colspan="2" scope="colgroup">Vitamin</th></tr>
+                <tr><td>Thiamine (mg)</td><td>0.48</td></tr>
+                <tr><td>Riboflavin (mg)</td><td>0.05</td></tr>
+                <tr><td>Niacin (mg)</td><td>4.7</td></tr>
+                <tr><td>Vitamin C (mg)</td><td>0.0</td></tr>
+                <tr><td>Lượng tương đương retinol của Vitamin A (&mu;g)</td><td>0.0</td></tr>
+                <tr><td>Vitamin E (mg)</td><td>0.7</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Thực dưỡng gạo lứt: Các món ăn từ gạo lứt -->
+        <div class="macrobiotic-block" data-reveal>
+          <h3>Thực Dưỡng Gạo Lứt — Các Món Ăn Từ Gạo Lứt</h3>
+          <div class="food-grid">
+            <figure class="food-card">
+              <img src="./assets/images/mon-com-gao-lut-rang.png" alt="Cơm gạo lứt rang" data-lightbox>
+              <figcaption>1. Cơm gạo lứt rang</figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="./assets/images/mon-keo-dau-gao-lut.jpg" alt="Kẹo đậu gạo lứt đậu phộng" data-lightbox>
+              <figcaption>2. Kẹo đậu gạo lứt đậu phộng</figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="./assets/images/mon-banh-khuc-gao-lut.jpg" alt="Bánh khúc gạo lứt" data-lightbox>
+              <figcaption>3. Bánh khúc gạo lứt</figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="./assets/images/mon-tra-gao-lut.PNG" alt="Trà gạo lứt" data-lightbox>
+              <figcaption>4. Trà gạo lứt</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Thực dưỡng gạo lứt: Những thực phẩm kết hợp với gạo lứt -->
+        <div class="macrobiotic-block" data-reveal>
+          <h3>Những Thực Phẩm Kết Hợp Với Gạo Lứt</h3>
+          <div class="food-grid">
+            <figure class="food-card">
+              <img src="./assets/images/ket-hop-thit-trung-rau.png" alt="Gạo lứt kết hợp thịt, trứng và rau" data-lightbox>
+              <figcaption>1. Thịt, trứng và rau</figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="./assets/images/ket-hop-dau-hu-rau-cu.jpg" alt="Gạo lứt kết hợp đậu hũ và rau củ" data-lightbox>
+              <figcaption>2. Đậu hũ và rau củ</figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="./assets/images/ket-hop-tom-cha-rau-xanh.png" alt="Gạo lứt kết hợp tôm, chả và rau xanh" data-lightbox>
+              <figcaption>3. Tôm, chả và rau xanh</figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="./assets/images/ket-hop-thit-bo-rau-xanh.png" alt="Gạo lứt kết hợp thịt bò và rau xanh" data-lightbox>
+              <figcaption>4. Thịt bò và rau xanh</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 2: LÁ SEN -->
+    <section class="section ingredient-section tab-panel" id="panel-la-sen" role="tabpanel" aria-labelledby="tab-la-sen" hidden>
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Nguyên liệu thứ hai</span>
+          <h2 class="section-title">Lá Sen — Giá Trị Dinh Dưỡng &amp; Thực Dưỡng</h2>
+        </div>
+
+        <!-- Nghiên cứu khoa học về lá sen -->
+        <div class="research-single" data-reveal>
+          <h3>Các Nghiên Cứu Về Giá Trị Dinh Dưỡng Của Lá Sen</h3>
+          <blockquote class="research-quote">
+            <p>
+              <strong>Theo Bác sĩ Thập Nữ Ngọc Huyền:</strong> Lá sen chứa nhiều hợp chất thực vật, trong đó có <em>alkaloid</em>, <em>flavonoid</em> và các hợp chất <em>phenolic</em>. Một số nghiên cứu đã xác định nhiều flavonoid và alkaloid trong chiết xuất lá sen, bao gồm <strong>quercetin</strong> và các alkaloid đặc trưng như <strong>nuciferine</strong>.
+            </p>
+          </blockquote>
+        </div>
+
+        <!-- Bảng thành phần dinh dưỡng Lá sen -->
+        <div class="nutrition-table-wrap" data-reveal>
+          <h3>Bảng Thành Phần Dinh Dưỡng Của Lá Sen</h3>
+          <div class="table-responsive">
+            <table class="nutrition-table">
+              <thead>
+                <tr>
+                  <th scope="col">Chất dinh dưỡng</th>
+                  <th scope="col">Lá sen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Calo</td><td>70 kcal</td></tr>
+                <tr><td>Kali</td><td>30 mg</td></tr>
+                <tr><td>Natri</td><td>28,5 g</td></tr>
+                <tr><td>Chất béo</td><td>2 g</td></tr>
+                <tr><td>Vitamin A</td><td>10,5% DV</td></tr>
+                <tr><td>Vitamin C</td><td>18,8% DV</td></tr>
+                <tr><td>Canxi</td><td>22,3% DV</td></tr>
+                <tr><td>Sắt</td><td>16,5% DV</td></tr>
+                <tr><td>Vitamin B6</td><td>Chưa có số liệu</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Các món ăn kết hợp với lá sen -->
+        <div class="macrobiotic-block" data-reveal>
+          <h3>Các Món Ăn Kết Hợp Với Lá Sen</h3>
+          <div class="food-grid">
+            <figure class="food-card">
+              <img src="./assets/images/mon-com-hap-la-sen.jpg" alt="Cơm hấp lá sen" data-lightbox>
+              <figcaption>1. Cơm hấp lá sen</figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="./assets/images/mon-ca-nuong-la-sen.jpg" alt="Cá nướng lá sen" data-lightbox>
+              <figcaption>2. Cá nướng lá sen</figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="./assets/images/mon-ga-hap-la-sen.jpg" alt="Gà hấp lá sen" data-lightbox>
+              <figcaption>3. Gà hấp lá sen</figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="./assets/images/mon-tra-la-sen.jpg" alt="Trà lá sen" data-lightbox>
+              <figcaption>4. Trà lá sen</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="siteFooter">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="./assets/images/logo-ha-noi-xua.png" alt="Logo Hà Nội Xưa" width="64" height="64">
+          <div>
+            <h3 class="footer-title">Hà Nội Xưa</h3>
+            <p class="footer-subtitle">Công Ty Cổ Phần Thực Phẩm Mai Chi</p>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Gìn giữ và phát huy giá trị ẩm thực truyền thống Việt Nam — Tinh hoa ẩm thực Việt từ nguyên liệu tự nhiên thuần khiết.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-heading">Danh mục trang</h4>
+        <ul>
+          <li><a href="index.html">Trang chủ &amp; Doanh nghiệp</a></li>
+          <li><a href="newProPack.html">Bao bì sản phẩm mới</a></li>
+          <li><a href="productInfo.html">Thông tin dinh dưỡng &amp; Thực dưỡng</a></li>
+          <li><a href="productStory.html">Câu chuyện sản phẩm</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-heading">Hệ thống cơ sở</h4>
+        <ul class="address-list">
+          <li><strong>Trụ sở chính:</strong> Số nhà 45 ngách 28/106 phố Đại Linh, phường Đại Mỗ, Hà Nội</li>
+          <li><strong>Showroom:</strong> Lô CN7,8 tòa nhà Famille, Nguyễn Hữu Tiến, phường Đồng Văn, Tỉnh Ninh Bình</li>
+          <li><strong>Nhà máy sản xuất:</strong> TDP Lảnh Trì, phường Duy Tân, Tỉnh Ninh Bình</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Công Ty Cổ Phần Thực Phẩm Mai Chi — Thương hiệu Hà Nội Xưa. Dự án giới thiệu sản phẩm trà truyền thống.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal dùng chung cho xem phóng to hình ảnh -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightboxCaption">
+    <div class="lightbox-backdrop" data-close-lightbox></div>
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Đóng cửa sổ xem ảnh">&times;</button>
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Nút cuộn nhanh lên đầu trang -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Cuộn lên đầu trang">&uarr;</button>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

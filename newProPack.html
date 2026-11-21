@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá cấu trúc bao bì mới, hệ màu nhận diện và các dòng trà thảo mộc của thương hiệu Hà Nội Xưa.">
+  <title>Bao Bì Sản Phẩm Mới | Trà Hà Nội Xưa</title>
+  <link rel="icon" href="./assets/images/logo-ha-noi-xua.png?v=2">
+  <!-- Google Fonts: Playfair Display (tiêu đề cổ điển) & Be Vietnam Pro (nội dung tiếng Việt) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <!-- Stylesheets (sẽ bổ sung chi tiết ở bước tiếp theo) -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Trang chủ Hà Nội Xưa">
+        <img src="./assets/images/logo-ha-noi-xua.png" alt="Logo thương hiệu Hà Nội Xưa - Since 1989" width="56" height="56">
+        <div class="brand-text">
+          <span class="brand-name">Hà Nội Xưa</span>
+          <span class="brand-tagline">Quà quê của người Việt</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="primaryNav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="newProPack.html" class="nav-link active" aria-current="page">Bao bì mới</a></li>
+          <li class="nav-item"><a href="productInfo.html" class="nav-link">Thông tin sản phẩm</a></li>
+          <li class="nav-item"><a href="productStory.html" class="nav-link">Câu chuyện sản phẩm</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Đường dẫn trang">
+          <a href="index.html">Trang chủ</a> <span>/</span> <span aria-current="page">Bao bì sản phẩm mới</span>
+        </nav>
+        <h1 class="page-title">Bao Bì Sản Phẩm Mới</h1>
+        <p class="page-desc">
+          Diện mạo mới cho dòng trà thảo mộc Hà Nội Xưa — Kết hợp bản sắc truyền thống với cấu trúc thông tin hiện đại, tiện dụng.
+        </p>
+      </div>
+    </section>
+
+    <!-- So sánh bao bì cũ & bao bì mới -->
+    <section class="section comparison-section" id="pack-comparison">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Cải tiến nhận diện</span>
+          <h2 class="section-title">So Sánh Bao Bì Cũ &amp; Bao Bì Mới</h2>
+        </div>
+
+        <!-- Khu vực hiển thị 2 ảnh + hỗ trợ JS Before/After Slider -->
+        <div class="comparison-wrapper" data-component="before-after" data-reveal>
+          <div class="comparison-grid">
+            <figure class="pack-compare-card old-pack">
+              <div class="pack-img-box">
+                <img src="./assets/images/bao-bi-cu.jpg" alt="Bao bì cũ sản phẩm Trà Gạo Lứt Lá Sen Hà Nội Xưa" data-lightbox>
+                <span class="pack-label badge-old">Bao bì cũ</span>
+              </div>
+              <figcaption>
+                <h3>Bao bì cũ</h3>
+              </figcaption>
+            </figure>
+
+            <figure class="pack-compare-card new-pack">
+              <div class="pack-img-box">
+                <img src="./assets/images/bao-bi-moi-gao-lut-la-sen.jpg" alt="Bao bì mới sản phẩm Trà Gạo Lứt Lá Sen Hà Nội Xưa" data-lightbox>
+                <span class="pack-label badge-new">Bao bì mới</span>
+              </div>
+              <figcaption>
+                <h3>Bao bì mới</h3>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phân tích cấu trúc bao bì (Interactive Tabs) -->
+    <section class="section structure-section" id="pack-structure">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Giải phẫu thiết kế</span>
+          <h2 class="section-title">Cấu Trúc Bao Bì Mới</h2>
+        </div>
+
+        <div class="tabs-container" data-tabs="packaging-faces" data-reveal>
+          <div class="tabs-nav" role="tablist" aria-label="Các mặt của bao bì mới">
+            <button type="button" class="tab-btn active" role="tab" id="tab-front" aria-selected="true" aria-controls="panel-front" data-tab-target="panel-front">
+              1. Bố cục mặt trước
+            </button>
+            <button type="button" class="tab-btn" role="tab" id="tab-back" aria-selected="false" aria-controls="panel-back" data-tab-target="panel-back">
+              2. Bố cục mặt sau
+            </button>
+            <button type="button" class="tab-btn" role="tab" id="tab-side" aria-selected="false" aria-controls="panel-side" data-tab-target="panel-side">
+              3. Bố cục mặt bên
+            </button>
+          </div>
+
+          <div class="tabs-panels">
+            <!-- Panel 1: Mặt trước -->
+            <div class="tab-panel active" id="panel-front" role="tabpanel" aria-labelledby="tab-front">
+              <div class="structure-text">
+                <ul class="styled-list">
+                  <li>Phần trên cùng đặt logo thương hiệu Hà Nội Xưa trong khung hình tròn, giúp khách hàng dễ dàng nhận diện thương hiệu.</li>
+                  <li>Phía trên trung tâm là dòng chữ slogan “Quà quê của người Việt”, được trình bày bằng kiểu chữ mềm mại, tạo cảm giác gần gũi và truyền thống.</li>
+                  <li>Phần trung tâm là tên sản phẩm “Trà gạo lứt lá sen”, được đặt trong khung chữ nhật màu đỏ nổi bật, trở thành điểm nhấn chính và giúp khách hàng nhanh chóng nhận biết sản phẩm.</li>
+                  <li>Phía dưới là hình ảnh minh họa hoa sen, lá sen và cánh đồng lúa, gợi lên nguồn nguyên liệu tự nhiên và nét đẹp văn hóa Việt Nam.</li>
+                  <li>Góc dưới bên trái bố trí mã QR để khách hàng tra cứu nguồn gốc và thông tin sản phẩm.</li>
+                  <li>Dòng chữ “Tinh hoa ẩm thực Việt” được đặt gần tên hình ảnh minh họa, góp phần truyền tải giá trị văn hóa của sản phẩm.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Panel 2: Mặt sau -->
+            <div class="tab-panel" id="panel-back" role="tabpanel" aria-labelledby="tab-back" hidden>
+              <div class="structure-text">
+                <ul class="styled-list">
+                  <li>Phần trên cùng tiếp tục sử dụng logo thương hiệu và thông điệp “Quà quê của người Việt” nhằm duy trì sự đồng bộ với mặt trước.</li>
+                  <li>Phần nội dung chính được chia thành các khu vực rõ ràng, bao gồm: thành phần sản phẩm, hướng dẫn sử dụng, bảo quản và cảnh báo.</li>
+                  <li>Các tiêu đề được đặt trong những thanh nền màu đỏ, chữ trắng, giúp phân biệt từng nhóm thông tin và tạo sự nổi bật.</li>
+                  <li>Phần hướng dẫn sử dụng được minh họa bằng các biểu tượng trực quan kết hợp mũi tên chỉ dẫn theo trình tự, giúp người tiêu dùng dễ dàng theo dõi các bước pha trà.</li>
+                  <li>Phía dưới sử dụng hình ảnh lá sen và họa tiết trang trí nhằm duy trì sự liên kết với mặt trước.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Panel 3: Mặt bên -->
+            <div class="tab-panel" id="panel-side" role="tabpanel" aria-labelledby="tab-side" hidden>
+              <div class="structure-text">
+                <ul class="styled-list">
+                  <li>Mặt bên sử dụng nền đỏ đô đồng nhất với màu sắc chủ đạo của bao bì.</li>
+                  <li>Biểu tượng hoa sen được đặt ở khu vực phía trên, tạo điểm nhấn trang trí và thể hiện đặc trưng của sản phẩm.</li>
+                  <li>Phần giữa và phía dưới bố trí nhãn thông tin sản phẩm, bao gồm mã số, ngày sản xuất, hạn sử dụng và mã vạch.</li>
+                  <li>Các thông tin được sắp xếp theo chiều dọc, có khoảng cách rõ ràng, giúp người tiêu dùng thuận tiện quan sát và tra cứu.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hệ thống màu sắc nhận diện -->
+    <section class="section colors-section" id="color-system">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <h2 class="section-title">Hệ Màu Nhận Diện Bao Bì</h2>
+        </div>
+
+        <div class="color-swatch-grid">
+          <article class="swatch-card" data-reveal>
+            <div class="swatch-preview swatch-burgundy" aria-hidden="true"></div>
+            <div class="swatch-info">
+              <h3>Đỏ Đô</h3>
+              <p>Đại diện cho vẻ đẹp cổ kính, trang trọng của phố cổ.</p>
+            </div>
+          </article>
+
+          <article class="swatch-card" data-reveal>
+            <div class="swatch-preview swatch-cream" aria-hidden="true"></div>
+            <div class="swatch-info">
+              <h3>Kem Mỹ Thuật</h3>
+              <p>Tạo cảm giác thanh lịch, hoài niệm.</p>
+            </div>
+          </article>
+
+          <article class="swatch-card" data-reveal>
+            <div class="swatch-preview swatch-lotus-green" aria-hidden="true"></div>
+            <div class="swatch-info">
+              <h3>Xanh Lá Sen</h3>
+              <p>Tôn vinh nét mộc mạc của nông sản làng quê.</p>
+            </div>
+          </article>
+
+          <article class="swatch-card" data-reveal>
+            <div class="swatch-preview swatch-earthy-gold" aria-hidden="true"></div>
+            <div class="swatch-info">
+              <h3>Vàng Đất</h3>
+              <p>Gợi nhớ màu mùa gặt, tôn vinh giá trị hạt gạo và thảo mộc quê hương.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chất liệu vỏ hộp & Túi trà kim tự tháp 3D -->
+    <section class="section materials-section" id="pack-materials">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Công nghệ đóng gói</span>
+          <h2 class="section-title">Chất Liệu Vỏ Hộp &amp; Túi Lọc </h2>
+        </div>
+
+        <div class="materials-grid">
+          <article class="material-card" data-reveal>
+            <span class="material-tag">Bảo vệ bên ngoài</span>
+            <h3>Phần Vỏ Hộp Giấy Bìa Cứng Cao Cấp</h3>
+            <p>
+              Hộp đựng dạng khối chữ nhật bằng <strong>giấy bìa cứng cao cấp</strong>, vuông vức và chịu lực tốt giúp bảo vệ túi trà tránh bị móp méo hay biến dạng khi vận chuyển. Bề mặt hộp phủ <strong>lớp màng chống ẩm mốc</strong>, kết hợp thiết kế nắp gập kín đáo giúp cách ly sản phẩm khỏi không khí và độ ẩm, giữ nguyên vẹn chất lượng cùng hương vị trà bên trong.
+            </p>
+          </article>
+
+          <article class="material-card" data-reveal>
+            <span class="material-tag">Trải nghiệm pha trà</span>
+            <h3>Phần Túi Trà Lọc </h3>
+            <p>
+              Trà bên trong được đựng trong <strong>túi lọc kim tự tháp (3D)</strong> bằng chất liệu <strong>lưới màng sinh học an toàn, chịu nhiệt cao</strong>. Cấu trúc không gian 3D rộng rãi tạo điều kiện cho các nguyên liệu gạo lứt, lá sen nở đều và giải phóng tối đa hương vị khi pha, đi kèm dây đính tem tiện lợi và vệ sinh cho người sử dụng.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Các quy cách khác & Các dòng sản phẩm trà khác -->
+    <section class="section catalog-section" id="other-teas">
+      <div class="container">
+        <!-- Quy cách đóng gói bổ sung (chờ cập nhật) -->
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Đa dạng lựa chọn</span>
+          <h2 class="section-title">Quy Cách Đóng Gói Bổ Sung</h2>
+        </div>
+
+        <div class="variants-grid">
+          <article class="variant-card placeholder-card" data-reveal>
+            <h3>Loại hộp nhỏ dành cho người muốn trải nghiệm thử</h3>
+            <p class="placeholder-note">[Thông tin quy cách và hình ảnh hộp nhỏ dùng thử đang được cập nhật]</p>
+          </article>
+
+          <article class="variant-card placeholder-card" data-reveal>
+            <h3>Dạng hộp quà tặng</h3>
+            <p class="placeholder-note">[Thông tin quy cách và hình ảnh bộ hộp quà tặng đang được cập nhật]</p>
+          </article>
+        </div>
+
+        <!-- Danh mục các loại sản phẩm trà khác -->
+        <div class="section-header catalog-header" data-reveal>
+          <span class="section-tag">Hệ sinh thái sản phẩm</span>
+          <h2 class="section-title">Các Loại Sản Phẩm Trà Khác Của Hà Nội Xưa</h2>
+        </div>
+
+        <div class="tea-catalog-grid">
+          <figure class="tea-card" data-reveal>
+            <div class="tea-card-img">
+              <img src="./assets/images/tra-gao-lut-la-sen.jpg" alt="Trà Gạo Lứt Lá Sen" data-lightbox>
+            </div>
+            <figcaption class="tea-card-body">
+              <h3>Trà Gạo Lứt Lá Sen</h3>
+            </figcaption>
+          </figure>
+
+          <figure class="tea-card" data-reveal>
+            <div class="tea-card-img">
+              <img src="./assets/images/tra-nhan-tran.jpg" alt="Trà Nhân Trần" data-lightbox>
+            </div>
+            <figcaption class="tea-card-body">
+              <h3>Trà Nhân Trần</h3>
+            </figcaption>
+          </figure>
+
+          <figure class="tea-card" data-reveal>
+            <div class="tea-card-img">
+              <img src="./assets/images/tra-do-den-xanh-long.jpg" alt="Trà Đỗ Đen Xanh Lòng" data-lightbox>
+            </div>
+            <figcaption class="tea-card-body">
+              <h3>Trà Đỗ Đen Xanh Lòng</h3>
+            </figcaption>
+          </figure>
+
+          <figure class="tea-card" data-reveal>
+            <div class="tea-card-img">
+              <img src="./assets/images/tra-gung-nghe.jpg" alt="Trà Gừng Nghệ" data-lightbox>
+            </div>
+            <figcaption class="tea-card-body">
+              <h3>Trà Gừng Nghệ</h3>
+            </figcaption>
+          </figure>
+
+          <figure class="tea-card" data-reveal>
+            <div class="tea-card-img">
+              <img src="./assets/images/tra-tia-to.png" alt="Trà Tía Tô" data-lightbox>
+            </div>
+            <figcaption class="tea-card-body">
+              <h3>Trà Tía Tô</h3>
+            </figcaption>
+          </figure>
+
+          <figure class="tea-card" data-reveal>
+            <div class="tea-card-img">
+              <img src="./assets/images/tra-giao-co-lam-linh-chi.jpg" alt="Trà Giảo Cổ Lam Linh Chi" data-lightbox>
+            </div>
+            <figcaption class="tea-card-body">
+              <h3>Trà Giảo Cổ Lam Linh Chi</h3>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="siteFooter">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="./assets/images/logo-ha-noi-xua.png" alt="Logo Hà Nội Xưa" width="64" height="64">
+          <div>
+            <h3 class="footer-title">Hà Nội Xưa</h3>
+            <p class="footer-subtitle">Công Ty Cổ Phần Thực Phẩm Mai Chi</p>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Gìn giữ và phát huy giá trị ẩm thực truyền thống Việt Nam — Tinh hoa ẩm thực Việt từ nguyên liệu tự nhiên thuần khiết.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-heading">Danh mục trang</h4>
+        <ul>
+          <li><a href="index.html">Trang chủ &amp; Doanh nghiệp</a></li>
+          <li><a href="newProPack.html">Bao bì sản phẩm mới</a></li>
+          <li><a href="productInfo.html">Thông tin dinh dưỡng &amp; Thực dưỡng</a></li>
+          <li><a href="productStory.html">Câu chuyện sản phẩm</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-heading">Hệ thống cơ sở</h4>
+        <ul class="address-list">
+          <li><strong>Trụ sở chính:</strong> Số nhà 45 ngách 28/106 phố Đại Linh, phường Đại Mỗ, Hà Nội</li>
+          <li><strong>Showroom:</strong> Lô CN7,8 tòa nhà Famille, Nguyễn Hữu Tiến, phường Đồng Văn, Tỉnh Ninh Bình</li>
+          <li><strong>Nhà máy sản xuất:</strong> TDP Lảnh Trì, phường Duy Tân, Tỉnh Ninh Bình</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Công Ty Cổ Phần Thực Phẩm Mai Chi — Thương hiệu Hà Nội Xưa. Dự án giới thiệu sản phẩm trà truyền thống.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal dùng chung cho xem phóng to hình ảnh -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightboxCaption">
+    <div class="lightbox-backdrop" data-close-lightbox></div>
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Đóng cửa sổ xem ảnh">&times;</button>
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Nút cuộn nhanh lên đầu trang -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Cuộn lên đầu trang">&uarr;</button>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Câu chuyện khởi nguồn thương hiệu Hà Nội Xưa và hành trình chắt lọc tinh hoa ẩm thực Việt.">
+  <title>Câu Chuyện Sản Phẩm | Trà Hà Nội Xưa</title>
+  <link rel="icon" href="./assets/images/logo-ha-noi-xua.png?v=2">
+  <!-- Google Fonts: Playfair Display (tiêu đề cổ điển) & Be Vietnam Pro (nội dung tiếng Việt) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Trang chủ Hà Nội Xưa">
+        <img src="./assets/images/logo-ha-noi-xua.png" alt="Logo thương hiệu Hà Nội Xưa - Since 1989" width="56" height="56">
+        <div class="brand-text">
+          <span class="brand-name">Hà Nội Xưa</span>
+          <span class="brand-tagline">Quà quê của người Việt</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="primaryNav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="newProPack.html" class="nav-link">Bao bì mới</a></li>
+          <li class="nav-item"><a href="productInfo.html" class="nav-link">Thông tin sản phẩm</a></li>
+          <li class="nav-item"><a href="productStory.html" class="nav-link active" aria-current="page">Câu chuyện sản phẩm</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+  </main>
+
+  <footer class="site-footer" id="siteFooter">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="./assets/images/logo-ha-noi-xua.png" alt="Logo Hà Nội Xưa" width="64" height="64">
+          <div>
+            <h3 class="footer-title">Hà Nội Xưa</h3>
+            <p class="footer-subtitle">Công Ty Cổ Phần Thực Phẩm Mai Chi</p>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Gìn giữ và phát huy giá trị ẩm thực truyền thống Việt Nam — Tinh hoa ẩm thực Việt từ nguyên liệu tự nhiên thuần khiết.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-heading">Danh mục trang</h4>
+        <ul>
+          <li><a href="index.html">Trang chủ &amp; Doanh nghiệp</a></li>
+          <li><a href="newProPack.html">Bao bì sản phẩm mới</a></li>
+          <li><a href="productInfo.html">Thông tin dinh dưỡng &amp; Thực dưỡng</a></li>
+          <li><a href="productStory.html">Câu chuyện sản phẩm</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-heading">Hệ thống cơ sở</h4>
+        <ul class="address-list">
+          <li><strong>Trụ sở chính:</strong> Số nhà 45 ngách 28/106 phố Đại Linh, phường Đại Mỗ, Hà Nội</li>
+          <li><strong>Showroom:</strong> Lô CN7,8 tòa nhà Famille, Nguyễn Hữu Tiến, phường Đồng Văn, Tỉnh Ninh Bình</li>
+          <li><strong>Nhà máy sản xuất:</strong> TDP Lảnh Trì, phường Duy Tân, Tỉnh Ninh Bình</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Công Ty Cổ Phần Thực Phẩm Mai Chi — Thương hiệu Hà Nội Xưa. Dự án giới thiệu sản phẩm trà truyền thống.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal dùng chung cho xem phóng to hình ảnh -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightboxCaption">
+    <div class="lightbox-backdrop" data-close-lightbox></div>
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Đóng cửa sổ xem ảnh">&times;</button>
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Nút cuộn nhanh lên đầu trang -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Cuộn lên đầu trang">&uarr;</button>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>
