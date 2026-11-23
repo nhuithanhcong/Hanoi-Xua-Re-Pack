@@ -1,0 +1,896 @@
+/* ==========================================================================
+   PAGES.CSS — Định dạng riêng cho từng trang nội dung (Trang 1 → Trang 4)
+   ========================================================================== */
+
+/* ==========================================================================
+   TRANG 1: INDEX.HTML (GIỚI THIỆU DOANH NGHIỆP & CƠ SỞ)
+   ========================================================================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 2.25rem;
+  align-items: start;
+}
+
+.about-story {
+  background-color: var(--color-surface);
+  border: var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.about-story p {
+  margin-bottom: 1.15rem;
+  line-height: 1.85;
+  font-size: 1.02rem;
+}
+
+.about-story p:last-child {
+  margin-bottom: 0;
+}
+
+.about-story strong {
+  color: var(--color-primary);
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.15rem;
+}
+
+.stat-card {
+  background-color: var(--color-bg-secondary);
+  border: var(--border-gold);
+  border-top: 4px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.15;
+  margin-bottom: 0.45rem;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--color-text-primary);
+  line-height: 1.45;
+}
+
+.locations-section {
+  background-color: var(--color-bg-secondary);
+  border-top: var(--border-gold-subtle);
+  border-bottom: var(--border-gold-subtle);
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.location-card {
+  background-color: var(--color-surface);
+  border: var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 1.85rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.location-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.location-type {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.85rem;
+}
+
+.location-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.location-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-primary);
+  line-height: 1.65;
+}
+
+.placeholder-note {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: var(--color-bg-secondary);
+  border: 1px dashed var(--color-accent);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+/* ==========================================================================
+   TRANG 2: NEWPROPACK.HTML (BAO BÌ SẢN PHẨM MỚI & QUY CÁCH ĐÓNG GÓI)
+   ========================================================================== */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.pack-compare-card {
+  background-color: var(--color-surface);
+  border: var(--border-gold);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.pack-compare-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.pack-img-box {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background-color: var(--color-bg-secondary);
+  overflow: hidden;
+}
+
+.pack-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.pack-compare-card:hover .pack-img-box img {
+  transform: scale(1.03);
+}
+
+.pack-label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.badge-old {
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-inverse);
+}
+
+.badge-new {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  border: var(--border-gold);
+}
+
+.pack-compare-card figcaption {
+  padding: 1.1rem 1.25rem;
+  text-align: center;
+  border-top: var(--border-gold-subtle);
+}
+
+.pack-compare-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+/* Hệ thống Tabs dùng chung cho Trang 2 & Trang 3 */
+.structure-section {
+  background-color: var(--color-bg-secondary);
+  border-top: var(--border-gold-subtle);
+  border-bottom: var(--border-gold-subtle);
+}
+
+.tabs-nav,
+.ingredient-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.4rem;
+  border-radius: var(--radius-md);
+  border: var(--border-gold);
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.tab-btn:hover {
+  background-color: var(--color-accent-soft);
+}
+
+.tab-btn.active,
+.tab-btn[aria-selected="true"] {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 14px rgba(123, 30, 38, 0.22);
+}
+
+/* Tab switcher đặt bên trong Page Banner đỏ đô (Trang 3) */
+.page-banner .ingredient-switcher {
+  margin-top: 1.65rem;
+  margin-bottom: 0;
+}
+
+.page-banner .tab-btn {
+  background-color: rgba(250, 246, 240, 0.12);
+  color: var(--color-text-inverse);
+  border-color: var(--color-accent);
+}
+
+.page-banner .tab-btn:hover {
+  background-color: rgba(198, 146, 44, 0.28);
+}
+
+.page-banner .tab-btn.active,
+.page-banner .tab-btn[aria-selected="true"] {
+  background-color: var(--color-accent);
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.tabs-panels {
+  background-color: var(--color-surface);
+  border: var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
+
+/* Hệ màu nhận diện bao bì */
+.color-swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.swatch-card {
+  background-color: var(--color-surface);
+  border: var(--border-gold);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast);
+}
+
+.swatch-card:hover {
+  transform: translateY(-4px);
+}
+
+.swatch-preview {
+  height: 115px;
+  border-bottom: var(--border-gold-subtle);
+}
+
+.swatch-burgundy {
+  background-color: var(--color-primary);
+}
+
+.swatch-cream {
+  background-color: var(--color-bg-secondary);
+}
+
+.swatch-lotus-green {
+  background-color: var(--color-lotus-green);
+}
+
+.swatch-earthy-gold {
+  background-color: var(--color-accent);
+}
+
+.swatch-info {
+  padding: 1.25rem;
+}
+
+.swatch-info h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.swatch-info p {
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
+  line-height: 1.55;
+}
+
+/* Chất liệu vỏ hộp & túi lọc */
+.materials-section {
+  background-color: var(--color-bg-secondary);
+  border-top: var(--border-gold-subtle);
+  border-bottom: var(--border-gold-subtle);
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.material-card {
+  background-color: var(--color-surface);
+  border: var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.material-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-accent);
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.material-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-bottom: 0.85rem;
+}
+
+.material-card p {
+  line-height: 1.75;
+}
+
+.material-card strong {
+  color: var(--color-primary);
+}
+
+/* Quy cách đóng gói bổ sung (Hộp nhỏ dùng thử & Hộp quà tặng) */
+.variant-detail-block {
+  background-color: var(--color-surface);
+  border: var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  margin-bottom: 2.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.variant-header {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: var(--border-gold-subtle);
+}
+
+.variant-badge {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25rem 0.85rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 0.55rem;
+}
+
+.variant-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  color: var(--color-primary);
+}
+
+.variant-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.gift-bag-block .variant-content-grid {
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.variant-media,
+.variant-showcase-media {
+  background-color: var(--color-bg-secondary);
+  border: var(--border-gold-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.variant-showcase-media {
+  margin-bottom: 2rem;
+}
+
+.variant-media img,
+.variant-showcase-media img {
+  width: 100%;
+  height: auto;
+}
+
+.variant-media figcaption,
+.variant-showcase-media figcaption {
+  padding: 0.75rem 1rem;
+  font-size: 0.86rem;
+  font-style: italic;
+  color: var(--color-text-secondary);
+  text-align: center;
+  border-top: var(--border-gold-subtle);
+}
+
+.variant-text p {
+  margin-bottom: 1.1rem;
+  line-height: 1.75;
+}
+
+.gift-intro {
+  background-color: var(--color-bg-secondary);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.75rem;
+}
+
+.gift-intro h4 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.gift-intro p {
+  line-height: 1.75;
+}
+
+.gift-sections-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gift-sub-block {
+  padding-bottom: 1.4rem;
+  border-bottom: 1px dashed rgba(198, 146, 44, 0.55);
+}
+
+.gift-sub-block:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.gift-sub-block h4 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.65rem;
+}
+
+.gift-sub-block p {
+  margin-bottom: 0.85rem;
+  line-height: 1.75;
+}
+
+/* Danh mục các loại trà khác */
+.catalog-header {
+  margin-top: 4rem;
+}
+
+.tea-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.tea-card {
+  background-color: var(--color-surface);
+  border: var(--border-gold);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.tea-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.tea-card-img {
+  aspect-ratio: 4 / 3;
+  background-color: var(--color-bg-secondary);
+  overflow: hidden;
+}
+
+.tea-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.tea-card:hover .tea-card-img img {
+  transform: scale(1.04);
+}
+
+.tea-card-body {
+  padding: 1rem 1.25rem;
+  text-align: center;
+  border-top: var(--border-gold-subtle);
+}
+
+.tea-card-body h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   TRANG 3: PRODUCTINFO.HTML (DINH DƯỠNG & THỰC DƯỠNG)
+   ========================================================================== */
+.research-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.35fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2.75rem;
+}
+
+.research-visual {
+  border: var(--border-gold);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.research-visual img {
+  width: 100%;
+  height: auto;
+}
+
+.research-content,
+.research-single {
+  background-color: var(--color-surface);
+  border: var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 1.85rem 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.research-grid .research-content {
+  margin-bottom: 0;
+}
+
+.research-content h3,
+.research-single h3,
+.nutrition-table-wrap h3,
+.macrobiotic-block h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--color-primary);
+  margin-bottom: 1.15rem;
+}
+
+.research-quote {
+  background-color: var(--color-bg-secondary);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1.1rem 1.35rem;
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.research-quote:last-child {
+  margin-bottom: 0;
+}
+
+.research-quote strong {
+  color: var(--color-primary);
+}
+
+.nutrition-table-wrap {
+  margin-bottom: 3rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  border: var(--border-gold);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.nutrition-table {
+  width: 100%;
+  text-align: left;
+}
+
+.nutrition-table thead th {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  font-weight: 600;
+  padding: 0.9rem 1.25rem;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.nutrition-table thead th:last-child,
+.nutrition-table tbody td:last-child {
+  text-align: right;
+  width: 35%;
+}
+
+.nutrition-table tbody td {
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid rgba(198, 146, 44, 0.28);
+}
+
+.nutrition-table tbody tr:nth-child(even) {
+  background-color: rgba(245, 239, 230, 0.55);
+}
+
+.nutrition-table .table-group-row th {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.7rem 1.25rem;
+  border-top: var(--border-gold);
+  border-bottom: var(--border-gold);
+}
+
+.macrobiotic-block {
+  margin-bottom: 2.75rem;
+}
+
+.macrobiotic-block:last-child {
+  margin-bottom: 0;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.35rem;
+}
+
+.food-card {
+  background-color: var(--color-surface);
+  border: var(--border-gold);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.food-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.food-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.food-card figcaption {
+  padding: 0.85rem 1rem;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  border-top: var(--border-gold-subtle);
+}
+
+/* ==========================================================================
+   TRANG 4: PRODUCTSTORY.HTML (CÂU CHUYỆN SẢN PHẨM - EDITORIAL STORYTELLING)
+   ========================================================================== */
+.story-article {
+  max-width: 820px;
+  margin: 0 auto;
+  background-color: var(--color-surface);
+  border: var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 3rem 3.25rem;
+  box-shadow: var(--shadow-md);
+}
+
+.story-header {
+  text-align: center;
+  margin-bottom: 2.25rem;
+  padding-bottom: 1.85rem;
+  border-bottom: var(--border-gold-subtle);
+}
+
+.story-main-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.45rem, 2.8vw, 2rem);
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.35;
+  margin-bottom: 1.5rem;
+}
+
+.story-epigraph {
+  background-color: var(--color-bg-secondary);
+  border: var(--border-gold-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.75rem;
+  font-style: italic;
+  font-size: 1.02rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.story-part {
+  margin-bottom: 1.85rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed rgba(198, 146, 44, 0.5);
+}
+
+.story-part:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.story-part p {
+  font-size: 1.04rem;
+  line-height: 1.88;
+  margin-bottom: 1.15rem;
+  color: var(--color-text-primary);
+  text-align: justify;
+}
+
+.story-part p:last-child {
+  margin-bottom: 0;
+}
+
+.story-part strong {
+  color: var(--color-primary);
+}
+
+.story-highlight-line {
+  text-align: center !important;
+  font-size: 1.2rem !important;
+  background-color: var(--color-bg-secondary);
+  border: var(--border-gold-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.25rem;
+  margin: 1.35rem 0 !important;
+}
+
+.story-quote,
+.story-questions {
+  background-color: var(--color-bg-secondary);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1.2rem 1.5rem;
+  margin: 1.35rem 0;
+  font-style: italic;
+}
+
+.story-quote p,
+.story-questions p {
+  text-align: left;
+  margin-bottom: 0.75rem;
+}
+
+.story-quote p:last-child,
+.story-questions p:last-child {
+  margin-bottom: 0;
+}
+
+.story-closing {
+  font-weight: 600;
+  color: var(--color-primary) !important;
+  background-color: var(--color-bg-secondary);
+  border: var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.6rem;
+  margin-top: 1.35rem;
+  text-align: left !important;
+}
+
+/* ==========================================================================
+   RESPONSIVE CHO CÁC TRANG NỘI DUNG
+   ========================================================================== */
+@media (max-width: 992px) {
+  .about-grid,
+  .research-grid,
+  .variant-content-grid,
+  .gift-bag-block .variant-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .locations-grid,
+  .tea-catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .color-swatch-grid,
+  .food-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .about-highlights,
+  .locations-grid,
+  .comparison-grid,
+  .color-swatch-grid,
+  .materials-grid,
+  .tea-catalog-grid,
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story,
+  .tabs-panels,
+  .variant-detail-block,
+  .research-content,
+  .research-single {
+    padding: 1.5rem;
+  }
+
+  .story-article {
+    padding: 1.75rem 1.35rem;
+  }
+
+  .story-part p {
+    text-align: left;
+  }
+
+  .tabs-nav,
+  .ingredient-switcher {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
